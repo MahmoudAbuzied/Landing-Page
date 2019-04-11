@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	background-color: #EEE;
+	font-family: 'Roboto', sans-serif;
+	color: #444;
+}
+a{
+	text-decoration: none;
+	color: #444;
+}
+/* nav */
+#nav-bar{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #ddd;
+}
+#header-img{
+	width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    padding: 15px;
+}
+.nav-link{
+	padding: 15px;
+}
+#nav-links{
+	display: flex;
+	align-items: center;
+}
+/* first-section */
+#main-form{
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	margin-bottom: 1em;
+}
+#form{
+	margin: 20px;
+}
+#email{
+	border: 1px solid #A9A9A9;
+	height: 15px;
+    padding: 15px;
+    width: 300px;
+    margin: .3em;
+    margin-top: 0px;
+}
+.submit-btn{
+	background-color: gold;
+    margin: 0.5em;
+    width: 150px;
+    height: 30px;
+    font-weight: lighter;
+    border: 1px solid burlywood;
+    font-size: 1em;
+    transition-duration: 0.4s;
+}
+.submit-btn:hover{
+	background-color: #ffb702;
+}
+/* second-section */
+#f{
+	display: flex;
+}
+.feature-row{
+	display: flex;
+}
+.feature{
+	display: flex;
+	flex-direction: column;
+	height: 125px;
+	width: -webkit-fill-available;
+	justify-content: center;
+}
+.ft-title{
+	margin: 0.2em;
+	margin-left: 0px;
+	font-weight: 500;
+	color: #555;
+}
+.ft-discription{
+	margin: 0.1em;
+	margin-left: 0px;
+	text-align: left;
+	color: #666;
+}
+.icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 125px;
+	width: 20vw;
+	color: darkorange;
+	margin: 1em;
+}
+/* third-section */
+#h{
+	display: flex;
+	margin: 2em 0 0 0;
+}
+#video{
+	max-width: 560px;
+	width: 100%;
+	margin: auto;
+}
+#pricing{
+	display: flex;
+	margin: 2em 0;
+}
+.tenor{
+	margin: 10px;
+	border: 1px solid #444;
+	width: calc(100%/3);
+	text-align: center;
+}
+.price-title{
+	background-color: #ddd;
+}
+.price,.price-title ,.pricing-container{
+	padding: 15px;
+}
+.lorem{
+	padding: 5px;
+}
+footer{
+	display: flex;
+	margin-top: 2em ;
+}
+#footer{
+	background-color: #ddd;
+	width: 100%;
+	padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+ol{
+	display: inline-flex;
+	flex-direction: row-reverse;
+}
+ol li{
+	align-items: center;
+    padding: 10px;
+    list-style: none;
+    display: inherit;
+}
+#foot{
+	display: flex;
+	flex-direction: row-reverse;
+}
+@media screen and (max-width: 800px)  {
+	.icons{
+		display: none;
+	}
+	.tenor{
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+	}
+	#nav-bar,#pricing{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+ 	}
+ 	#nav-links,#header-img{
+ 		padding: 3px;
+ 	}
+}
+main{
+	margin-top: 100px;
+}
